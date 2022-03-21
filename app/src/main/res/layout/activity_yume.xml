@@ -10,7 +10,9 @@
         android:id="@+id/chip6"
         android:layout_width="76dp"
         android:layout_height="76dp"
-        tools:layout_editor_absoluteX="290dp"
+        android:text="bruh"
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="298dp"
         tools:layout_editor_absoluteY="277dp" />
 
     <com.google.android.material.chip.Chip
