@@ -10,9 +10,6 @@
     tools:context=".MainActivity">
 
     <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
@@ -28,12 +25,18 @@
             <TextView
                 android:id="@+id/monthYearTV"
                 android:layout_width="0dp"
+                android:layout_height="match_parent"
                 android:layout_weight="2"
-                android:layout_height="wrap_content"
-                android:text="Feb 2021"
-                android:textSize="20sp"
+                android:text="                 Feb 2021"
                 android:textAlignment="center"
-                android:textColor="@color/black"/>
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="121dp"
+                android:layout_height="162dp"
+                app:srcCompat="@drawable/logonopromo" />
 
         </LinearLayout>
 
