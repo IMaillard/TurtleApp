@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#90BE78">
 
     <ScrollView
         android:layout_width="412dp"
@@ -18,18 +19,18 @@
     </ScrollView>
 
     <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="113dp"
-        android:layout_height="96dp"
-        app:srcCompat="@drawable/logonopromo"
-        tools:layout_editor_absoluteX="298dp"
-        tools:layout_editor_absoluteY="-2dp" />
-
-    <ImageView
         android:id="@+id/imageView5"
         android:layout_width="257dp"
         android:layout_height="196dp"
         tools:layout_editor_absoluteX="77dp"
-        tools:layout_editor_absoluteY="26dp"
-        tools:srcCompat="@tools:sample/avatars" />
+        tools:layout_editor_absoluteY="41dp"
+        tools:srcCompat="@drawable/slider" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="71dp"
+        android:layout_height="90dp"
+        app:srcCompat="@drawable/logonopromo"
+        tools:layout_editor_absoluteX="341dp"
+        tools:layout_editor_absoluteY="-4dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
