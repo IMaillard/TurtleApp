@@ -7,21 +7,21 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/alarm_button"
         android:layout_width="322dp"
         android:layout_height="84dp"
         android:layout_marginTop="84dp"
-        android:text="Button"
+        android:text="Eating schedule"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/info_button"
         android:layout_width="322dp"
         android:layout_height="84dp"
         android:layout_marginTop="48dp"
-        android:text="Button"
+        android:text="About this turtle"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/calendarButton" />
@@ -31,10 +31,10 @@
         android:layout_width="322dp"
         android:layout_height="84dp"
         android:layout_marginTop="48dp"
-        android:text="Button"
+        android:text="Cleaning times"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button2" />
+        app:layout_constraintTop_toBottomOf="@+id/alarm_button" />
 
     <ImageView
         android:id="@+id/imageView"
