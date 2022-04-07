@@ -12,30 +12,17 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="number"
-        app:layout_constraintEnd_toEndOf="@+id/editTextNumber2"
-        app:layout_constraintStart_toStartOf="@+id/editTextNumber2"
-        tools:layout_editor_absoluteY="105dp" />
-
-    <EditText
-        android:id="@+id/editTextNumber2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="number"
         tools:layout_editor_absoluteX="100dp"
-        tools:layout_editor_absoluteY="241dp" />
+        tools:layout_editor_absoluteY="173dp" />
 
     <ImageView
         android:id="@+id/imageView7"
         android:layout_width="295dp"
         android:layout_height="278dp"
-        android:layout_marginBottom="88dp"
+        android:layout_marginBottom="116dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/editTextNumber2"
-        app:layout_constraintHorizontal_bias="0.494"
-        app:layout_constraintStart_toStartOf="@+id/editTextNumber2"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumber2"
-        app:srcCompat="@drawable/clockmepp" />
+        app:srcCompat="@drawable/clockmepp"
+        tools:layout_editor_absoluteX="58dp" />
 
     <ImageView
         android:id="@+id/imageView8"
@@ -45,5 +32,13 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/logonopromo" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="175dp"
+        tools:layout_editor_absoluteY="27dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
