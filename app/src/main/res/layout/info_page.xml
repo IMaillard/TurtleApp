@@ -3,21 +3,14 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="-3dp" />
+    android:layout_height="match_parent"
+    android:background="#90BE78">
 
     <ScrollView
-        android:layout_width="409dp"
-        android:layout_height="309dp"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="363dp">
+        android:layout_width="412dp"
+        android:layout_height="314dp"
+        tools:layout_editor_absoluteX="-1dp"
+        tools:layout_editor_absoluteY="264dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -26,10 +19,18 @@
     </ScrollView>
 
     <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="257dp"
+        android:layout_height="196dp"
+        tools:layout_editor_absoluteX="77dp"
+        tools:layout_editor_absoluteY="41dp"
+        tools:srcCompat="@drawable/slider" />
+
+    <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="71dp"
+        android:layout_height="90dp"
         app:srcCompat="@drawable/logonopromo"
-        tools:layout_editor_absoluteX="-1dp"
-        tools:layout_editor_absoluteY="-2dp" />
+        tools:layout_editor_absoluteX="341dp"
+        tools:layout_editor_absoluteY="-4dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
