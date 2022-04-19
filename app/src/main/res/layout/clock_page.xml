@@ -10,10 +10,15 @@
         android:id="@+id/editTextNumber"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
         android:ems="10"
         android:inputType="number"
-        tools:layout_editor_absoluteX="100dp"
-        tools:layout_editor_absoluteY="173dp" />
+        app:layout_constraintBottom_toTopOf="@+id/imageView7"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
         android:id="@+id/imageView7"
@@ -21,8 +26,12 @@
         android:layout_height="278dp"
         android:layout_marginBottom="116dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:srcCompat="@drawable/clockmepp"
-        tools:layout_editor_absoluteX="58dp" />
+        app:layout_constraintEnd_toEndOf="@+id/editTextNumber"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="@+id/editTextNumber"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.937"
+        app:srcCompat="@drawable/clockmepp" />
 
     <ImageView
         android:id="@+id/imageView8"
@@ -30,6 +39,8 @@
         android:layout_height="76dp"
         android:layout_marginTop="4dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textView"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/logonopromo" />
 
@@ -37,8 +48,22 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="175dp"
-        tools:layout_editor_absoluteY="27dp" />
+        android:layout_marginTop="48dp"
+        android:text="Alarms"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/timeSwitch"
+        android:layout_width="90dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageView7"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/imageView7"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
