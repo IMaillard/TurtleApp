@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
 
         ImageView turtleImage = (ImageView)findViewById(R.id.imageView);
 
-        rightArrow.setOnClickListener(new View.OnClickListener() {
+        /*rightArrow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 int i = 0;
@@ -56,7 +56,7 @@ turtleImage.setImageResource(TurtleDB.ids[i]);
                 }
                 i++;
             }
-        });
+        });*/
 
 
     }
