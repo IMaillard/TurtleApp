@@ -42,25 +42,62 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        ImageView turtleImage = (ImageView) findViewById(R.id.imageView);
         ImageButton rightArrow = (ImageButton) findViewById(R.id.right_arrow);
         ImageButton leftArrow = (ImageButton) findViewById(R.id.left_arrow);
 
-        ImageView turtleImage = (ImageView)findViewById(R.id.imageView);
-
-        /*rightArrow.setOnClickListener(new View.OnClickListener() {
+        rightArrow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 int i = 0;
-                while(i<TurtleDB.ids.length){
-turtleImage.setImageResource(TurtleDB.ids[i]);
-                }
+                turtleImage.setImageResource(TurtleDB.ids[i]);
                 i++;
+                if (i == 4) {
+                    i = 0;
+
+                }
             }
-        });*/
+        });
+
+        leftArrow.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                int i = 0;
+                turtleImage.setImageResource(TurtleDB.ids[i]);
+                i--;
+                if(i<0){
+                    i=4;
+                }
+            }
+        });
+
 
 
     }
 
+
+   /* public void nextImage(View view) {
+        rightArrow = (ImageButton) findViewById(R.id.right_arrow);
+        turtleImage = (ImageView)findViewById(R.id.imageView);
+        int i = 0;
+        turtleImage.setImageResource(TurtleDB.ids[i]);
+        i++;
+        if (i == 4) {
+            i = 0;
+
+        }
+    }
+
+    public void previousImage(View view){
+        leftArrow = (ImageButton) findViewById(R.id.left_arrow);
+        turtleImage = (ImageView)findViewById(R.id.imageView);
+        int i = 0;
+        turtleImage.setImageResource(TurtleDB.ids[i]);
+        i--;
+        if(i<0){
+            i=4;
+        }
+        }*/
 
 
 
