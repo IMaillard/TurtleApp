@@ -3,10 +3,10 @@ package com.example.turtleapp;
 public class TurtleDB {
 
     public static int[] ids = {
-            R.drawable.hermann,
-            R.drawable.redfoot,
+            R.drawable.slider,
             R.drawable.russian,
-            R.drawable.slider
+            R.drawable.redfoot,
+            R.drawable.hermann
     };
 
     public static String[] trivia = {
