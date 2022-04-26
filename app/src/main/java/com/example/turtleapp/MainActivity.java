@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         ImageView turtleImage = (ImageView) findViewById(R.id.imageView);
-        ImageButton rightArrow = (ImageButton) findViewById(R.id.right_arrow);
+        ImageButton rightArrow = (ImageButton) findViewById(R.id.left_arrow);
         ImageButton leftArrow = (ImageButton) findViewById(R.id.left_arrow);
 
         rightArrow.setOnClickListener(new View.OnClickListener() {
