@@ -2,7 +2,7 @@ package com.example.turtleapp;
 
 public class TurtleDB {
 
-    public static int[] ids = {
+    public static Integer [] ids = {
             R.drawable.slider,
             R.drawable.russian,
             R.drawable.redfoot,
