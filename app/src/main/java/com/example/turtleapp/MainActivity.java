@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.lang.reflect.Array;
@@ -22,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
 
     public static final String IMAGE_VALUE_KEY = "image_key";
     Integer resource;
+
 
 
     @Override
@@ -56,6 +58,7 @@ public class MainActivity extends AppCompatActivity {
         ImageView turtleImage = (ImageView) findViewById(R.id.imageView);
         ImageButton rightArrow = (ImageButton) findViewById(R.id.right_arrow);
         ImageButton leftArrow = (ImageButton) findViewById(R.id.left_arrow);
+        TextView nameText = (TextView) findViewById(R.id.textView4);
 
 
 
@@ -65,6 +68,7 @@ public class MainActivity extends AppCompatActivity {
             int i = 0;
             @Override
             public void onClick(View view) {
+                nameText.setText(TurtleDB.names[i]);
                 turtleImage.setImageResource(TurtleDB.ids[i]);
                 i++;
                 if (i == TurtleDB.ids.length) {
@@ -81,6 +85,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 try {
+                    nameText.setText(TurtleDB.names[i]);
                     turtleImage.setImageResource(TurtleDB.ids[i]);
                 }catch(Exception exception){
                     i=3;
@@ -97,7 +102,10 @@ public class MainActivity extends AppCompatActivity {
 
         if(savedInstanceState != null){
             int value = savedInstanceState.getInt(IMAGE_VALUE_KEY, 0);
-            resource = (Integer)turtleImage.getTag();}
+            resource = (Integer)turtleImage.getTag();
+
+            turtleImage.setImageResource(resource);
+        }
 
 
     }

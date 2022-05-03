@@ -9,6 +9,13 @@ public class TurtleDB {
             R.drawable.hermann
     };
 
+    public static String[] names = {
+            "Red-Eared Slider",
+            "Russian Tortoise",
+            "Red-footed Tortoise",
+            "Hermann's Tortoise"
+    };
+
     public static String[] trivia = {
             "Red-eared sliders are very active and love to swim. While they are mostly aquatic, these diurnal turtles also enjoy a dry, warm place where they can climb out and bask under a heat light. Turtles are social animals and can be kept together as long as you provide enough space in their habitat.",
             "Native to Asia, these small tortoises enjoy burrowing and roaming about their habitat. In nature, they live in deep burrows underground, which enables them to withstand wide environmental temperature variations. With a long life span of 50+ years, Russian tortoises can be companions for life.",

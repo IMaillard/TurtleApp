@@ -12,5 +12,10 @@ public class InfoActivity extends AppCompatActivity {
         setContentView(R.layout.info_page);
 
     }
+
+
+
+
+
 }
 
