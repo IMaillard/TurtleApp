@@ -7,52 +7,51 @@
     android:background="#90BE78">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
-
-    <ScrollView
-        android:layout_width="411dp"
-        android:layout_height="401dp"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="314dp">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical" />
-    </ScrollView>
+        android:id="@+id/recyclerView"
+        android:layout_width="418dp"
+        android:layout_height="399dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
         android:id="@+id/imageView5"
         android:layout_width="257dp"
         android:layout_height="196dp"
-        tools:layout_editor_absoluteX="77dp"
-        tools:layout_editor_absoluteY="66dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         tools:srcCompat="@drawable/slider" />
 
     <ImageView
         android:id="@+id/imageView4"
         android:layout_width="71dp"
         android:layout_height="90dp"
-        app:srcCompat="@drawable/logonopromo"
-        tools:layout_editor_absoluteX="341dp"
-        tools:layout_editor_absoluteY="-4dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logonopromo" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="233dp"
         android:layout_height="36dp"
-        android:text="Gneneral Information"
+        android:text="General Information"
         android:textAlignment="center"
         android:textSize="20sp"
-        tools:layout_editor_absoluteX="89dp"
-        tools:layout_editor_absoluteY="270dp" />
+        app:layout_constraintBottom_toTopOf="@+id/recyclerView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="TextView"
-        tools:layout_editor_absoluteX="172dp"
-        tools:layout_editor_absoluteY="29dp" />
+        app:layout_constraintBottom_toTopOf="@+id/imageView5"
+        app:layout_constraintEnd_toStartOf="@+id/imageView4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

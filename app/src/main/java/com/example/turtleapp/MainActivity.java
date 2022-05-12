@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
         TextView nameText = (TextView) findViewById(R.id.textView4);
 
 
-//
+
 
 
         rightArrow.setOnClickListener(new View.OnClickListener() {
