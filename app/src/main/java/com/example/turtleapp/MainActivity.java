@@ -1,15 +1,28 @@
 package com.example.turtleapp;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
+
+    public static final String IMAGE_VALUE_KEY = "image_key";
+    Integer resource;
 
 
 
@@ -45,61 +58,63 @@ public class MainActivity extends AppCompatActivity {
         ImageView turtleImage = (ImageView) findViewById(R.id.imageView);
         ImageButton rightArrow = (ImageButton) findViewById(R.id.right_arrow);
         ImageButton leftArrow = (ImageButton) findViewById(R.id.left_arrow);
+        TextView nameText = (TextView) findViewById(R.id.textView4);
+
+
+
+
 
         rightArrow.setOnClickListener(new View.OnClickListener() {
+            int i = 0;
             @Override
             public void onClick(View view) {
-                int i = 0;
+                nameText.setText(TurtleDB.names[i]);
                 turtleImage.setImageResource(TurtleDB.ids[i]);
                 i++;
-                if (i == 4) {
+                if (i == TurtleDB.ids.length) {
                     i = 0;
 
                 }
+
+
             }
         });
 
         leftArrow.setOnClickListener(new View.OnClickListener() {
+            int i = 4;
             @Override
             public void onClick(View view) {
-                int i = 0;
-                turtleImage.setImageResource(TurtleDB.ids[i]);
-                i--;
-                if(i<0){
-                    i=4;
+                try {
+                    nameText.setText(TurtleDB.names[i]);
+                    turtleImage.setImageResource(TurtleDB.ids[i]);
+                }catch(Exception exception){
+                    i=3;
+                    turtleImage.setImageResource(TurtleDB.ids[i]);
                 }
+                i--;
+
             }
+
+
+
         });
 
 
+        if(savedInstanceState != null){
+            int value = savedInstanceState.getInt(IMAGE_VALUE_KEY, 0);
+            resource = (Integer)turtleImage.getTag();
+
+            turtleImage.setImageResource(resource);
+        }
+
 
     }
 
 
-   /* public void nextImage(View view) {
-        rightArrow = (ImageButton) findViewById(R.id.right_arrow);
-        turtleImage = (ImageView)findViewById(R.id.imageView);
-        int i = 0;
-        turtleImage.setImageResource(TurtleDB.ids[i]);
-        i++;
-        if (i == 4) {
-            i = 0;
-
-        }
+    protected void onSaveInstanceState(@NonNull Bundle outState){
+        outState.putInt(IMAGE_VALUE_KEY, resource);
+        super.onSaveInstanceState(outState);
     }
-
-    public void previousImage(View view){
-        leftArrow = (ImageButton) findViewById(R.id.left_arrow);
-        turtleImage = (ImageView)findViewById(R.id.imageView);
-        int i = 0;
-        turtleImage.setImageResource(TurtleDB.ids[i]);
-        i--;
-        if(i<0){
-            i=4;
-        }
-        }*/
-
-
 
 
 }
