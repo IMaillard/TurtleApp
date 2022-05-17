@@ -6,6 +6,24 @@
     android:layout_height="match_parent"
     android:background="#90BE78">
 
+ test3
+    <ScrollView
+        android:layout_width="368dp"
+        android:layout_height="377dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageView5"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="@+id/imageView5"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="1.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
         android:layout_width="418dp"
@@ -13,15 +31,23 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+ master
 
     <ImageView
         android:id="@+id/imageView5"
         android:layout_width="257dp"
         android:layout_height="196dp"
+ test3
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView3"
+        app:layout_constraintStart_toStartOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+
         android:layout_marginTop="60dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+ master
         tools:srcCompat="@drawable/slider" />
 
     <ImageView
@@ -29,6 +55,11 @@
         android:layout_width="71dp"
         android:layout_height="90dp"
         app:layout_constraintEnd_toEndOf="parent"
+ test3
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+
+ master
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/logonopromo" />
 
@@ -36,22 +67,39 @@
         android:id="@+id/textView2"
         android:layout_width="233dp"
         android:layout_height="36dp"
+ test3
+        android:layout_marginTop="20dp"
+        android:text="Gneneral Information"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView5"
+        app:layout_constraintStart_toStartOf="@+id/imageView5"
+
         android:text="General Information"
         android:textAlignment="center"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/recyclerView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+ master
         app:layout_constraintTop_toBottomOf="@+id/imageView5" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+ test3
+        android:text="Turtle Name"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
         android:text="TextView"
         app:layout_constraintBottom_toTopOf="@+id/imageView5"
         app:layout_constraintEnd_toStartOf="@+id/imageView4"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+master
 </androidx.constraintlayout.widget.ConstraintLayout>

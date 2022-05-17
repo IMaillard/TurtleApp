@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="alarm_button" type="id" />
+    <item name="calendarButton" type="id" />
+    <item name="info_button" type="id" />
+    <item name="left_arrow" type="id" />
+    <item name="right_arrow" type="id" />
+</resources>
