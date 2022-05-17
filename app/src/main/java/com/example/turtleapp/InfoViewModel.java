@@ -14,7 +14,7 @@ public class InfoViewModel extends AndroidViewModel {
         super(application);
         currentTurtle = new MutableLiveData<Turtle>();
     }
-
+   //
     public MutableLiveData<Turtle> getCurrentTurtle() {
         return currentTurtle;
     }
