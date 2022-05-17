@@ -2,11 +2,18 @@ package com.example.turtleapp;
 
 public class TurtleDB {
 
-    public static int[] ids = {
+    public static Integer[] ids = {
             R.drawable.slider,
             R.drawable.russian,
             R.drawable.redfoot,
             R.drawable.hermann
+    };
+
+    public static String[] turtleType = {
+            "Red-Eared Slider",
+            "Russian Tortoise",
+            "Red-footed Tortoise",
+            "Hermann's Tortoise"
     };
 
     public static String[] trivia = {
@@ -16,15 +23,35 @@ public class TurtleDB {
             "Hermann\'s tortoises are gentle, surprisingly active pets with a beautiful yellow and brown pattern on their carapace."
 
 
+    };
+
+    public static String[] sizeInfo = {
 
     };
 
     public static String[] diet = {
+    onclick_testing
+            "A well-balanced red-eared slider diet consists of a pelleted commercial diet. Commercial turtle treats and freeze-dried krill may be given as treats. Non-toxic aquatic plants (anacharis, water lettuce), dark leafy vegetables and sliced vegetables such as squash and carrots. Comet goldfish, earthworms and insects may be offered as treats.",
+            "The Russian tortoise's natural diet consists of herbaceous and succulent vegetation including grasses, twigs, flowers and some fruits. These tortoises DO NOT EAT ANIMAL PROTEIN! The best diet is one that comes as close as possible to their natural diet, which is high fiber, low protein, and calcium rich.",
+
     "A well-balanced red-eared slider diet consists of a pelleted commercial diet. Commercial turtle treats and freeze-dried krill may be given as treats. Non-toxic aquatic plants (anacharis, water lettuce), dark leafy vegetables and sliced vegetables such as squash and carrots. Comet goldfish, earthworms and insects may be offered as treats.",
             "The Russian tortoise\'s natural diet consists of herbaceous and succulent vegetation including grasses, twigs, flowers and some fruits. These tortoises DO NOT EAT ANIMAL PROTEIN! The best diet is one that comes as close as possible to their natural diet, which is high fiber, low protein, and calcium rich.",
+    master
             "Red-footed tortoises are generally herbivores but will eat carrion and slow-moving invertebrates such as slugs and snails: The bulk of the diet should consist of dark leafy greens and broad-leaf graze. Also offer a variety of chopped vegetables, hay, some berries, and other fruits.",
             "A Hermann\'s tortoise\'s diet consists of vegetation. Good foods include dandelion, clover, honeysuckle, leafy salads, watercress, curly kale, brussel tops, spring greens, coriander, parsley, rocket, carrot, parsnip, courgette and bell peppers. The bulk of the vegetation should be leafy greens."
     };
-
-
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+

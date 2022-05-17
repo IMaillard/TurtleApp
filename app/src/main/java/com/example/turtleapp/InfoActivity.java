@@ -11,5 +11,15 @@ public class InfoActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.info_page);
 
+
+
+
+
     }
+
+
+
+
+
 }
+
