@@ -6,7 +6,7 @@ import androidx.annotation.NonNull;
 import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.MutableLiveData;
 
-public class InfoViewModel extends AndroidViewModel {
+public class InfoViewModel extends AndroidViewModel{
 
     private MutableLiveData<Turtle> currentTurtle;
 

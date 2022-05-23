@@ -15,7 +15,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView5"
+        android:id="@+id/currentTurtle"
         android:layout_width="257dp"
         android:layout_height="196dp"
         android:layout_marginTop="60dp"
@@ -42,14 +42,14 @@
         app:layout_constraintBottom_toTopOf="@+id/recyclerView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+        app:layout_constraintTop_toBottomOf="@+id/currentTurtle" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="TextView"
-        app:layout_constraintBottom_toTopOf="@+id/imageView5"
+        app:layout_constraintBottom_toTopOf="@+id/currentTurtle"
         app:layout_constraintEnd_toStartOf="@+id/imageView4"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

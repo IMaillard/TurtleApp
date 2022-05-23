@@ -9,8 +9,10 @@ public class AlarmActivity extends AppCompatActivity {
      @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.clock_page);
+        setContentView(R.layout.clock_page                             );
 
     }
+
+
 
 }

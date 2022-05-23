@@ -5,14 +5,21 @@ public class Turtle {
     private String turtleInfo;
     private String dietInfo;
     private String habitatInfo;
-    private final int imageResource;
+    private                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      int imageResource;
 
 
-    public Turtle(String name, String turtleInfo, String dietInfo,String habitatInfo, int imageResource) {
+    public Turtle() {
+    }
+
+    public Turtle(String name, int imageResource) {
+        this.name = name;
+        this.imageResource = imageResource;
+    }
+
+    public Turtle(String name, String turtleInfo, String dietInfo, int imageResource) {
         this.name = name;
         this.turtleInfo = turtleInfo;
         this.dietInfo = dietInfo;
-        this.habitatInfo = dietInfo;
         this.imageResource = imageResource;
     }
 
@@ -44,11 +51,4 @@ public class Turtle {
         return imageResource;
     }
 
-    public String getHabitatInfo() {
-        return habitatInfo;
-    }
-
-    public void setHabitatInfo(String habitatInfo) {
-        this.habitatInfo = habitatInfo;
-    }
 }
