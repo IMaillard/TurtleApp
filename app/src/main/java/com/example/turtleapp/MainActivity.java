@@ -45,11 +45,11 @@ public class MainActivity extends AppCompatActivity {
         currentTurtle = new Turtle(getName(), resource);
 
 
-        if(savedInstanceState != null){
+        /*if(savedInstanceState != null){
             value = savedInstanceState.getInt(IMAGE_VALUE_KEY, 0);
 
             turtleImage.setImageResource(resource);
-        }
+        }*/
 
         Button calendarButton = (Button) findViewById(R.id.calendarButton);
         calendarButton.setOnClickListener(new View.OnClickListener() {
@@ -128,11 +128,11 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-    protected void onSaveInstanceState(@NonNull Bundle outState){
+  /*  protected void onSaveInstanceState(@NonNull Bundle outState){
         outState.putInt(IMAGE_VALUE_KEY, value);
         super.onSaveInstanceState(outState);
     }
-
+*/
     public String getName() {
        String name = (String)nameText.getText();
        return name;
