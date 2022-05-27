@@ -3,6 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+ onclick_testing
+        <entry key="..\:/Users/andre.sa7416/AndroidStudioProjects/TurtleApp/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/andre.sa7416/AndroidStudioProjects/TurtleApp/app/src/main/res/layout/activity_turt_info.xml" value="0.33" />
+        <entry key="..\:/Users/andre.sa7416/AndroidStudioProjects/TurtleApp/app/src/main/res/layout/activity_yume.xml" value="0.33" />
+        <entry key="..\:/Users/andre.sa7416/AndroidStudioProjects/TurtleApp/app/src/main/res/layout/info_page.xml" value="0.33" />
+
  test3
  test3
         <entry key="..\:/Users/andre.sa7416/AndroidStudioProjects/TurtleApp/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1855" />
@@ -14,21 +20,25 @@
         <entry key="..\:/Users/cesar.me8957/AndroidStudioProjects/TurtleApp/app/src/main/res/layout/activity_main.xml" value="0.17401215805471124" />
 
  onclick_testing
+ master
         <entry key="..\:/Users/cesar.me8957/AndroidStudioProjects/TurtleApp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
         <entry key="..\:/Users/cesar.me8957/AndroidStudioProjects/TurtleApp/app/src/main/res/layout/activity_calendar.xml" value="0.22" />
         <entry key="..\:/Users/cesar.me8957/AndroidStudioProjects/TurtleApp/app/src/main/res/layout/activity_main.xml" value="0.17401215805471124" />
-        <entry key="..\:/Users/cesar.me8957/AndroidStudioProjects/TurtleApp/app/src/main/res/layout/activity_yume.xml" value="0.1" />
+        <entry key="..\:/Users/cesar.me8957/AndroidStudioProjects/TurtleApp/app/src/main/res/layout/activity_yume.xml" value="0.18" />
         <entry key="..\:/Users/cesar.me8957/AndroidStudioProjects/TurtleApp/app/src/main/res/layout/clock_page.xml" value="0.17401215805471124" />
         <entry key="..\:/Users/cesar.me8957/AndroidStudioProjects/TurtleApp/app/src/main/res/layout/fragment_calendar.xml" value="0.1" />
         <entry key="..\:/Users/cesar.me8957/AndroidStudioProjects/TurtleApp/app/src/main/res/layout/info_page.xml" value="0.18" />
         <entry key="..\:/Users/cesar.me8957/AndroidStudioProjects/TurtleApp/app/src/main/res/layout/placeholder_calendar.xml" value="0.12771739130434784" />
         <entry key="..\:/Users/cesar.me8957/AndroidStudioProjects/TurtleApp/app/src/main/res/layout/turtle_info_fragment.xml" value="0.17401215805471124" />
+ onclick_testing
+
 master
 
         <entry key="..\:/Users/andre.sa7416/AndroidStudioProjects/TurtleApp/app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="..\:/Users/andre.sa7416/AndroidStudioProjects/TurtleApp/app/src/main/res/layout/activity_turt_info.xml" value="0.33" />
         <entry key="..\:/Users/andre.sa7416/AndroidStudioProjects/TurtleApp/app/src/main/res/layout/activity_yume.xml" value="0.33" />
         <entry key="..\:/Users/andre.sa7416/AndroidStudioProjects/TurtleApp/app/src/main/res/layout/info_page.xml" value="0.33" />
+ master
         <entry key="..\:/Users/gabri.ma8449/AndroidStudioProjects/TurtleApp/app/src/main/res/layout/activity_calendar.xml" value="0.2513586956521739" />
         <entry key="..\:/Users/gabri.ma8449/AndroidStudioProjects/TurtleApp/app/src/main/res/layout/activity_main.xml" value="0.165625" />
         <entry key="..\:/Users/gabri.ma8449/AndroidStudioProjects/TurtleApp/app/src/main/res/layout/activity_yume.xml" value="0.33" />
@@ -41,7 +51,6 @@ master
         <entry key="..\:/Users/gabri.ma8449/AndroidStudioProjects/TurtleApp/app/src/main/res/mipmap-anydpi-v26/blue_round.xml" value="0.175" />
         <entry key="..\:/Users/gabri.ma8449/AndroidStudioProjects/TurtleApp/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.175" />
         <entry key="..\:/Users/gabri.ma8449/AndroidStudioProjects/TurtleApp/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.175" />
- master
       </map>
     </option>
   </component>

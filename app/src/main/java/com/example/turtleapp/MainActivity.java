@@ -22,14 +22,34 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity {
 
     public static final String IMAGE_VALUE_KEY = "image_key";
-    Integer resource;
+    public static int value;
+
+     Turtle currentTurtle;
+
+    TextView nameText;
 
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_yume);
+
+
+        ImageView turtleImage = (ImageView) findViewById(R.id.imageView);
+        ImageButton rightArrow = (ImageButton) findViewById(R.id.right_arrow);
+        ImageButton leftArrow = (ImageButton) findViewById(R.id.left_arrow);
+        nameText = (TextView) findViewById(R.id.textView4);
+        int resource = (int)turtleImage.getTag();
+        currentTurtle = new Turtle(getName(), resource);
+
+
+        /*if(savedInstanceState != null){
+            value = savedInstanceState.getInt(IMAGE_VALUE_KEY, 0);
+
+            turtleImage.setImageResource(resource);
+        }*/
 
         Button calendarButton = (Button) findViewById(R.id.calendarButton);
         calendarButton.setOnClickListener(new View.OnClickListener() {
@@ -55,10 +75,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        ImageView turtleImage = (ImageView) findViewById(R.id.imageView);
-        ImageButton rightArrow = (ImageButton) findViewById(R.id.right_arrow);
-        ImageButton leftArrow = (ImageButton) findViewById(R.id.left_arrow);
-        TextView nameText = (TextView) findViewById(R.id.textView4);
+
 
 
 
@@ -68,8 +85,9 @@ public class MainActivity extends AppCompatActivity {
             int i = 0;
             @Override
             public void onClick(View view) {
-                nameText.setText(TurtleDB.names[i]);
+                nameText.setText(TurtleDB.turtleType[i]);
                 turtleImage.setImageResource(TurtleDB.ids[i]);
+                currentTurtle = new Turtle(getName(), resource);
                 i++;
                 if (i == TurtleDB.ids.length) {
                     i = 0;
@@ -85,12 +103,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 try {
-                    nameText.setText(TurtleDB.names[i]);
+                    nameText.setText(TurtleDB.turtleType[i]);
                     turtleImage.setImageResource(TurtleDB.ids[i]);
                 }catch(Exception exception){
                     i=3;
+                    nameText.setText(TurtleDB.turtleType[i]);
                     turtleImage.setImageResource(TurtleDB.ids[i]);
                 }
+                currentTurtle = new Turtle(getName(), resource);
                 i--;
 
             }
@@ -100,21 +120,25 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-        if(savedInstanceState != null){
-            int value = savedInstanceState.getInt(IMAGE_VALUE_KEY, 0);
-            resource = (Integer)turtleImage.getTag();
 
-            turtleImage.setImageResource(resource);
-        }
+
 
 
     }
 
 
-    protected void onSaveInstanceState(@NonNull Bundle outState){
-        outState.putInt(IMAGE_VALUE_KEY, resource);
+
+  /*  protected void onSaveInstanceState(@NonNull Bundle outState){
+        outState.putInt(IMAGE_VALUE_KEY, value);
         super.onSaveInstanceState(outState);
     }
+*/
+    public String getName() {
+       String name = (String)nameText.getText();
+       return name;
+    }
+
+
 
 
 }
